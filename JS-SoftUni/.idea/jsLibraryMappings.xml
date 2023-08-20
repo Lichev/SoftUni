@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/Exercise - HTTP and REST/01.Bus-Stop" libraries="{JS-SoftUni/Exercise - HTTP and REST/01.Bus-Stop/node_modules}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>
