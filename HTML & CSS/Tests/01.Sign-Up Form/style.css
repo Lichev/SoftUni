@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0deg 0% 91%);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body section {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 400px;
+    background-color: hsl(0deg 0% 98%);
+    
+}
+
+
+.left, .right{
+    flex-basis: 50%;
+}
+
+.left{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.739), rgba(0, 0, 0, 0.686)),
+        url(./image/cover.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+    color: hsl(282deg 5% 64%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+.left .logo {
+    align-self: flex-start;
+    padding-left: 24px;
+}
+.left .text{
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+    color: hsl(282deg 5% 64%);
+}
+
+.right input:not(:last-child) {
+    background-color: hsl(0deg 0% 98%);
+    border-bottom: 1px solid gray;
+    border-top: hsl(0deg 0% 98%);;
+    border-left: hsl(0deg 0% 98%);;
+    border-right: hsl(0deg 0% 98%);;
+    margin: 5px;
+    width: 90%;
+    font-size: 16px;
+  }
+
+.buttons  input[type="submit"] {
+    background-color: #060706;
+    color: white;
+    flex-basis: 50%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 24px;
+  }
+
+
+  input[type="submit"]:hover {
+    background-color: #333533;
+  }
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttons a {
+    color: hsl(282deg 5% 64%);
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(./background.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 45%;
+    height: 70%;
+    background: url(./form-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    border-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 5px 5px;
+}    
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+.content h1 {
+    font-size: 24px;
+    color: rgb(116, 114, 114);
+}
+
+
+.content form {
+    display: grid;
+    grid-template-areas: 
+    "first first second second"
+    "email email email email"
+    "pasword pasword pasword pasword"
+    "r r r r"
+    'c c c c';
+    padding-left: 15px;
+    color: rgb(180, 179, 179);
+    gap: 35px;
+    grid-row-gap: 10px;
+}
+
+
+.first-name {
+    grid-area: first;
+}
+
+.second-name {
+    grid-area: second;
+}
+
+.email {
+    grid-area: email;
+}
+
+.pasword {
+    grid-area: pasword;
+}
+
+.repeat {
+    grid-area: r;
+}
+
+.checkbox{
+    grid-area: c;
+}
+
+
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid rgb(180, 179, 179);
+  border-radius: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 15px;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.btn {
+    border-radius: 20px;
+    padding: 8px 16px;
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+  }
+
+.red {
+    background-color: #e74c3c;
+}
+

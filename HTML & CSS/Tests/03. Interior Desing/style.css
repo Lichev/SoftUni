@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+    --dark-brown: #9b9189;
+    --light-brown: #f2f0f3;
+    --med-brown: #bab1ad;
+    --green-brown: #67784d;
+    --headings: #333333;
+    --shadow: #929090;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
+  color: hsl(0deg 2% 21%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Abril Fatface', cursive;
+    color: var(--headings)
+    
+}
+
+section {
+  min-height: 1100px;
+}
+
+.first {
+  background-image: url(./image/image.jpg);
+  background-repeat: no-repeat;
+  /* background-size:100% 100%; */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.first .first-box{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 350px;
+    height: 250px;
+}
+
+.first .first-box .container-h{
+    width: 50%;
+    font-size: 2rem;
+    border-bottom: 3px solid white;
+}
+
+.first .first-box .small{
+    font-size: 1.2rem;
+}
+
+.first .second-box{
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    top: 30%;
+    right: 3%;
+    font-size: 1.4rem;
+    color: linear-gradient(to right, var(--light-brown), var(--dark-brown));
+    background: linear-gradient(to right, #9b9189, #c9c7c6);
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.first .second-box >p{
+    padding-left: 22px;
+}
+
+.first .second-box .big{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: normal;
+    color: #8d8581;
+    margin-bottom: 10px;
+}
+
+
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex-basis: 70%;
+    background-color: var(--light-brown);
+}
+
+.left h2{
+    margin-top: 84px;
+    font-size: 3.6rem;
+}
+
+.list-block{
+    margin: 0 10%;
+    /* display: inline-block; */
+    font-size: 1.5rem;
+}
+
+.list-block .upercase{
+    text-transform: uppercase;
+}
+
+.list-block ul li {
+    margin-bottom: 32px;
+    margin-top: 24px;
+}
+
+.list-block .border{
+    border-bottom: 1px solid;
+}
+
+.left hr{
+    border: 1px solid var(--dark-brown);
+}
+
+.left .contacts{
+    margin: 3% 10%;
+    font-size: 1.5rem;
+}
+
+.left .contacts span{
+    margin-right: 10px;
+}
+
+.left .contacts .contact-fields{
+    margin-top: 3%;
+    display: flex;
+    gap: 10px;
+}
+
+.left .contacts button{
+    width: 160px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: var(--green-brown);
+    border-style: none;
+    color: var(--light-brown);
+}
+
+input[type="text"] {
+    width: 160px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: var(--dark-brown);
+    border-style: none;
+    font-size: 16px;
+    width: 50%;
+    color: var(--light-brown);
+}
+
+input[type="text"]::placeholder {
+    padding-left: 10px;
+    color: var(--light-brown);
+  }
+
+.right {
+    flex-basis: 30%;
+    background-color: var(--dark-brown);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 15%;
+}
+
+.right > div{
+    margin-left: 10%;
+    height: 10%;
+    line-height: 48px;
+}
+
+.right .white{
+    font-size: 5rem;
+    color: var(--light-brown);
+}
+
+.right .dark {
+    font-size: 1.5rem;
+}

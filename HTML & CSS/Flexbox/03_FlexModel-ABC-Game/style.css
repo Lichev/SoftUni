@@ -1,0 +1,78 @@
+html{
+    font-family: Helvetica, sans-serif;
+}
+
+
+body {
+  background-color: gainsboro;
+  font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 15vw;
+    height: 35rem;
+    gap: 10px;
+    align-items: center;
+}
+
+.container .items {
+    width: 82px;
+    height: 50px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(92, 91, 91);
+    text-align: center;
+
+}
+
+
+.container .S {
+    order: -12;
+}
+
+.container .e {
+    order: -11;
+}
+
+.container .m {
+    order: -10;
+}
+
+.container .a {
+    order: -9;
+}
+
+.container .n {
+    order: -8;
+}
+
+.container .t {
+    order: -7;
+}
+
+.container .i {
+    order: -6;
+}
+
+.container .c {
+    order: -5;
+}
+
+.container .H {
+    order: -4;
+}
+
+.container .T {
+    order: -3;
+}
+
+.container .M {
+    order: -2;
+}
+
+.container .L {
+    order: 1;
+}

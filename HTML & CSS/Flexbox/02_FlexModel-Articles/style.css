@@ -1,0 +1,31 @@
+html{
+    font-family: Helvetica, sans-serif;
+    line-height: 1.2;
+
+}
+
+body {
+    background-color: #C2BCBB;
+}
+
+body section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 70vw;
+}
+
+
+body section article{
+    flex-basis: 23%;
+    border: dashed;
+    padding: 5px;
+    background-color: rgb(198, 154, 147);
+    text-align: center;
+}
+
+
+body section article h2{
+    font-family: Georgia, serif;
+    line-height: 1.2;
+}
